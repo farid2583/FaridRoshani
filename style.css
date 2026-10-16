@@ -1,0 +1,135 @@
+.password-hint::before {
+    content: "✨";
+    font-size: 0.8rem;
+}
+
+/* ---------- TERMS ---------- */
+.terms {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.8rem 0 1.5rem;
+}
+
+.terms label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #9b4b6e;
+    cursor: pointer;
+}
+
+.terms input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #ffb347;
+    cursor: pointer;
+}
+
+.terms a {
+    color: #d43f8b;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid #ffe066;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.terms a:hover {
+    color: #b32e6b;
+    border-bottom-color: #ffb347;
+}
+
+/* ---------- BUTTON ---------- */
+.btn-register {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #7a3b5a;
+    background: linear-gradient(135deg, #ffb6c1, #ffe066);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+    box-shadow:
+        0 12px 20px -8px rgba(255, 150, 150, 0.6),
+        0 6px 12px -4px rgba(255, 215, 0, 0.5);
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                background 0.25s ease,
+                color 0.25s ease;
+}
+
+.btn-register:hover {
+    color: #5c2a42;
+    background: linear-gradient(135deg, #ffa5b9, #ffd966);
+    transform: translateY(-3px);
+    box-shadow:
+        0 20px 28px -10px rgba(255, 120, 160, 0.7),
+        0 10px 18px -6px rgba(255, 200, 0, 0.6);
+}
+
+.btn-register:active {
+    transform: translateY(1px);
+    box-shadow: 0 8px 14px -6px rgba(255, 105, 180, 0.5);
+}
+
+/* ---------- LOGIN LINK ---------- */
+.login-link {
+    margin-top: 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #9d5b7c;
+    text-align: center;
+}
+
+.login-link a {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 0.2rem 1rem;
+    font-weight: 800;
+    color: #d43f8b;
+    text-decoration: none;
+    background: linear-gradient(135deg, #ffb6c1, #ffe066);
+    border: 1px solid #fff3bf;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(255, 192, 203, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.login-link a:hover {
+    color: #7a1f4a;
+    background: linear-gradient(135deg, #ffa5b9, #ffd966);
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(255, 150, 150, 0.6);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 480px) {
+    .register-card {
+        padding: 2rem 1.5rem;
+        border-radius: 36px 12px 36px 12px;
+    }
+
+    .register-card::before {
+        border-radius: 33px 9px 33px 9px;
+    }
+
+    .register-card h1 {
+        font-size: 2rem;
+    }
+
+    .terms {
+        justify-content: center;
+    }
+
+    .btn-register {
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+}
